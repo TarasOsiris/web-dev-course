@@ -37,4 +37,4 @@ npm run dev
 
 Огляньте структуру проекту та використайте Chat GPT для того, щоб з'ясувати для чого які файли потрібні:
 
-![alt tag](/images/react-project-structure.png)
+<img src="/images/react-project-structure.png" alt="React Project Structure" width="256px">
