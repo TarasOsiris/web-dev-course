@@ -30,4 +30,4 @@ npm install
 npm run dev
 ```
 
-![alt tag](images/react-project-structure.png)
+![alt tag](/images/react-project-structure.png)
