@@ -21,3 +21,23 @@ section {
     border: 2px solid black;
     padding: 2em;
 }
+
+.my-class {
+    background-color: lightblue;
+}
+
+.my-other-class {
+    border: 3px solid green;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 2em 0;
+}
+
+/* ID selectors are unique to a single element. */
+/* They are defined with a # symbol. */
+#my-id {
+    background-color: lightgreen;
+    padding: 1em;
+}
