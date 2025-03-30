@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+article {
+    background-color: lightgray;
+}
+
+article p:first-of-type {
+    color: red;
+    font-size: 1.5em;
+}
+
+/* A universal selector—also known as a wildcard—matches any element. */
+* {
+    color: hotpink;
+}
+
+/* A type selector matches a HTML element directly. */
+section {
+    border: 2px solid black;
+    padding: 2em;
+}
