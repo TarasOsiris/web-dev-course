@@ -1,0 +1,36 @@
+/* The content ends up 142px wide, instead of the 100px you specified, and it breaks out of your element. Why is that?
+
+The box model is a core foundation of CSS. Understanding how the box model works, how it's affected by other aspects of CSS, and importantly, how you can control it, can help you write more predictable CSS. 
+*/
+/* p {
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid;
+} */
+
+.awesome {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  border: 5px solid;
+  padding: 2rem;
+
+  /* The important extrinsic width */
+  width: 320px;
+}
+
+.awesome[data-sizing="intrinsic"] {
+  width: min-content;
+}
+
+/*
+
+
+Presentational styles 
+*/
+.awesome {
+  --flow-space: 2rem;
+}
+

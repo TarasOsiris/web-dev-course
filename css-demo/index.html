@@ -9,53 +9,35 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="left-section">
-      <img src="vite.svg" class="avatar" alt="Manasi Goyal">
-      <h2>Contact</h2>
-      <p>📍 Pune, Maharashtra<br>
-        📧 manasi@example.com<br>
-        📱 +91 915 5894669<br>
-        🌐 www.interestingsite.com</p>
 
-      <h2>Education</h2>
-      <p><strong>Graphic Design Institute</strong><br>Master of Arts Graphic Design<br>2016-2018</p>
-      <p><strong>School of Fine Art</strong><br>BA Fine Arts Graphic Design<br>2012-2016</p>
+  <main>
+    <div class="wrapper">
+      <h1>=== Box Model ===</h1>
+        <article class="flow">
 
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Adobe Creative Suite</li>
-        <li>UI/UX Design</li>
-        <li>Visual Communication</li>
-        <li>Branding & Identity</li>
-        <li>Project Management</li>
-      </ul>
+        <h1>Extrinsic sizing vs intrinsic sizing</h1>
+        <figure class="callout">
+          <p>
+            Notice that when the box is using <strong>extrinsic sizing</strong>, there’s
+            a limit of how much content you can add before it overflows out of the box’s
+            bounds. This makes the word, “awesome”, overflow.
+          </p>
+        </figure>
+        <label class="toggle" for="intrinsic-switch">
+          <span class="toggle__label">Turn on intrinsic sizing</span>
+          <input type="checkbox" role="switch" class="toggle__element" id="intrinsic-switch" />
+          <div class="toggle__decor" aria-hidden="true">
+            <div class="toggle__thumb"></div>
+          </div>
+        </label>
+        <p class="awesome" data-element="awesome">CSS is awesome</p>
+      </article>
     </div>
-    <div class="right-section">
-      <h1>Manasi Goyal</h1>
-      <p><em>Creative Graphic Designer with 5+ years of experience</em></p>
 
-      <h2>Objective</h2>
-      <p>To leverage my creativity and design skills to develop visually compelling and effective designs that meet the
-        needs and exceed the expectations of clients while continuously growing my professional expertise.</p>
+    <hr />
+  </main>
 
-      <h2>Experience</h2>
-      <p><strong>Art Director</strong><br>Sundara Design Co. | Jaipur, Rajasthan | 2020-Present</p>
-      <p>• Collaborate with cross-functional teams to develop integrated campaigns across various media channels<br>
-        • Lead a team of 4 designers, providing mentorship and creative direction<br>
-        • Successfully increased client retention by 35% through innovative design solutions</p>
 
-      <p><strong>Senior Designer</strong><br>Prem Rekhaan | Hyderabad, Telangana | 2018-2020</p>
-      <p>• Led design projects from concept to completion for major clients in retail and tech sectors<br>
-        • Collaborated with stakeholders to ensure alignment with brand guidelines and marketing objectives<br>
-        • Designed award-winning packaging that increased product sales by 28%</p>
-
-      <p><strong>Graphic Designer</strong><br>Kala Aaj | Bangalore, Karnataka | 2016-2018</p>
-      <p>• Worked with cross-functional teams to execute various design projects<br>
-        • Created visual content for digital and print marketing campaigns<br>
-        • Developed brand identity systems for startup clients</p>
-    </div>
-  </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
