@@ -75,3 +75,64 @@ L
   color: blue;
   background-color: yellow;
 }
+
+/* Grouping selectors */
+strong,
+em,
+.my-grouping-class,
+[data-grouping] {
+  background-color: lightgray;
+}
+
+/* Pseudo-classes and pseudo-elements */
+.hover-me:hover {
+  outline: 5px solid red;
+}
+
+/* Sets all even paragraphs to have a different background */
+p:nth-child(even) {
+  outline: 2px solid blue;
+}
+
+.my-before-example::before {
+  content: '❤️❤️❤️❤️❤️';
+  color: red;
+}
+
+.my-before-example::after {
+  content: '🔥🔥🔥';
+  color: red;
+}
+
+::selection {
+  background-color: green;
+  color: black;
+}
+
+/* ============== Complex selectors ============== */
+/* Combinators */
+
+
+/* This snippet selects all <strong> elements that are child elements of <p> elements only, making them blue recursively. */
+p strong {
+  color: red;
+}
+
+/* Next sibling combinator */
+.next-sibling-demo *+* {
+  background-color: lightblue;
+  margin-top: 1em;
+  outline: 1px solid black;
+}
+
+.subsequent-sibling-demo p~* {
+  background-color: lightblue;
+  margin-top: 1em;
+  outline: 1px solid black;
+}
+
+/* Compound selectors */
+a.my-link {
+  background-color: lime;
+  padding: 1em;
+}
