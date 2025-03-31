@@ -1,43 +1,77 @@
 h1 {
-    color: blue;
+  color: blue;
 }
 
 article {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 article p:first-of-type {
-    color: red;
-    font-size: 1.5em;
+  color: red;
+  font-size: 1.5em;
 }
 
 /* A universal selector—also known as a wildcard—matches any element. */
 * {
-    color: hotpink;
+  color: hotpink;
 }
 
 /* A type selector matches a HTML element directly. */
 section {
-    border: 2px solid black;
-    padding: 2em;
+  border: 2px solid black;
+  padding: 2em;
 }
 
 .my-class {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .my-other-class {
-    border: 3px solid green;
+  border: 3px solid green;
 }
 
 hr {
-    border: 2px solid black;
-    margin: 2em 0;
+  border: 2px solid black;
+  margin: 2em 0;
 }
 
 /* ID selectors are unique to a single element. */
 /* They are defined with a # symbol. */
 #my-id {
-    background-color: lightgreen;
-    padding: 1em;
+  background-color: lightgreen;
+  padding: 1em;
+}
+
+/* Attribute selectors match elements based on their attributes. */
+[data-attr='primary'] {
+  background-color: red;
+}
+
+[data-attr='secondary'] {
+  background-color: green;
+}
+
+/* You can use case-sensitive attribute selectors by adding an s operator to your attribute selector. */
+[data-attr='tertiary' s] {
+  background-color: blue;
+}
+
+/* ================ HREF Selectors ================ */
+L
+
+/* A href that contains "example.com" */
+[href*='something.example.com'] {
+  background-color: red;
+  color: white;
+}
+
+/* A href that starts with https */
+[href^='https://google'] {
+  background-color: green;
+}
+
+/* A href that ends with .com */
+[href$='.xyz'] {
+  color: blue;
+  background-color: yellow;
 }
