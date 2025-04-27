@@ -101,14 +101,19 @@ section.demo-section {
   gap: 1rem;
 
   padding: 8px;
-  margin: 16px auto;
+  margin: 16px 16px;
   border-radius: 8px;
   background-color: #3c3d42;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 
   width: 1000px;
-  min-height: 256px;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+#section-1-button {
+  margin-top: auto;
 }
 
 section.demo-section:hover {
@@ -117,5 +122,5 @@ section.demo-section:hover {
 
 .bright-red {
   color: #ff0000;
-  border: 2px solid rgb(255, 0, 0);
+  border: 5px solid rgb(255, 0, 0);
 }
