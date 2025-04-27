@@ -40,3 +40,15 @@ console.log(typeof button) // "object"
 // strict comparison and weak comparison
 console.log('2 == "2"', 2 == "2")
 console.log('2 === "2"', 2 === "2")
+
+
+
+// Dom manipulation
+const demoSection1 = document.querySelector('#demo-section-1')
+console.log(demoSection1)
+
+const demoSection1Button = demoSection1.querySelector('button')
+demoSection1Button.addEventListener('click', () => {
+  demoSection1.classList.toggle('bright-red')
+  demoSection1Button.innerHTML = demoSection1.classList.contains('bright-red') ? 'Red' : 'Not Red'
+})

@@ -94,3 +94,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+section.demo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 8px;
+  margin: 16px auto;
+  border-radius: 8px;
+  background-color: #3c3d42;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  width: 1000px;
+  min-height: 256px;
+}
+
+section.demo-section:hover {
+  background-color: #5750db;
+}
+
+.bright-red {
+  color: #ff0000;
+  border: 2px solid rgb(255, 0, 0);
+}
